@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cognia Observation Forms</title>
@@ -397,10 +398,57 @@
   }
 }
 
-@media (max-width: 600px) {
-  h1, h2, h3 {
-    font-size: 18px;
+@media (max-width: 700px) {
+  body{
+    padding:0;
+    margin:0;
   }
+
+  .tabs{
+    display:flex;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    gap:6px;
+  }
+
+  .tab{
+    flex:0 0 auto;
+    min-width:120px;
+    font-size:13px;
+    padding:10px 8px;
+  }
+
+  .score-panel{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:8px;
+  }
+
+  table{
+    width:100%;
+    display:block;
+    overflow-x:auto;
+    border-collapse:collapse;
+  }
+
+  thead, tbody, tr{
+    width:100%;
+  }
+
+  th, td{
+    font-size:12px;
+    padding:6px;
+  }
+
+  textarea{
+    width:100%;
+    box-sizing:border-box;
+  }
+
+  button{
+    width:100%;
+  }
+}
 
   .score-panel {
     grid-template-columns: 1fr;
